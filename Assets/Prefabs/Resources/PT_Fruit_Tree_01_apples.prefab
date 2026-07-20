@@ -273,7 +273,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be98d4ebd31fb4945a0e8e143cba4629, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resourceName: Apple
+  item: {fileID: 11400000, guid: 4b56e0bd9df08794bbdb1003a7fc1e16, type: 2}
   amountPerCollect: 1
   usesRemaining: 1
   promptText: Press E to interact

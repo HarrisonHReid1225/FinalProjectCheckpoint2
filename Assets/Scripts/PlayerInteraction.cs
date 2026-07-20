@@ -8,6 +8,8 @@ public class PlayerInteraction : MonoBehaviour
     public float interactionRange = 3f;
     public TextMeshProUGUI promptText;
 
+    public Inventory inventory;
+
     private InteractableResource currentResource;
     private Animator animator;
     private bool isInteracting;
@@ -104,7 +106,7 @@ public class PlayerInteraction : MonoBehaviour
 
         if (currentResource != null)
         {
-            currentResource.Interact();
+            currentResource.Interact(inventory);
         }
 
         yield return new WaitForSeconds(0.3f);
